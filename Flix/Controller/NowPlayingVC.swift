@@ -93,7 +93,7 @@ class NowPlayingVC: UIViewController, UITableViewDataSource, UISearchBarDelegate
         
         
         let posterURL = URL(string: "\(baseURLString)\(posterPathString)")!
-        let placeholderImage = UIImage(named: "now_playing_tabbar_item")!
+        let placeholderImage = UIImage(named: "launch_image")!
         let filter = AspectScaledToFillSizeWithRoundedCornersFilter(
             size: cell.posterImg.frame.size,
             radius: 20.0
