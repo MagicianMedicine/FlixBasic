@@ -1,6 +1,6 @@
-# Lab 1 - *FlixBasic*
+# Project 1 - *FlixBasic*
 
-**Name of your app** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+**FlixBasic** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Time spent: **3** hours spent in total
 
@@ -8,14 +8,19 @@ Time spent: **3** hours spent in total
 
 The following **required** user stories are complete:
 
-- [x] User can scroll through a feed of images returned from the Tumblr API (5pts)
+- [x] User sees app icon in home screen and styled launch screen (+1pt)
+- [x] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
+- [x] User can "Pull to refresh" the movie list (+2pt)
+- [x] User sees a loading state while waiting for the movies to load (+2pt)
 
 The following **stretch** user stories are implemented:
 
 - [x] User sees an alert when there's a networking error (+1pt)
+- [x] User can search for a movie (+3pt)
 - [x] While poster is being fetched, user see's a placeholder image (+1pt)
 - [x] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
 - [x] Customize the selection effect of the cell (+1pt)
+- [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete (+2pt)
 
 ## Video Walkthrough
 
