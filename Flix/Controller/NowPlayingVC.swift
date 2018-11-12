@@ -44,13 +44,6 @@ class NowPlayingVC: UIViewController, UITableViewDataSource, UISearchBarDelegate
     }
     
     
-    override func viewWillAppear(_ animated: Bool) {
-        if let index = self.tableView.indexPathForSelectedRow{
-            self.tableView.deselectRow(at: index, animated: true)
-        }
-    }
-    
-    
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl){
         fetchMovies()
     }
@@ -108,17 +101,6 @@ class NowPlayingVC: UIViewController, UITableViewDataSource, UISearchBarDelegate
         cell.posterImg.af_setImage(withURL: posterURL, placeholderImage: placeholderImage, filter: filter, imageTransition: .crossDissolve(0.2))
         
         return cell
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        if let indexPath = tableView.indexPath(for: cell){
-            let moive = filterMovies[indexPath.row]
-            let detailVC = segue.destination as! DetailVC
-            detailVC.movie = moive
-        }
-        searchBar.resignFirstResponder()
     }
     
     
